@@ -1,0 +1,12 @@
+server:
+  port: 8001
+# 每个服务必须指定name，此name就是当前系统中服务的唯一标识
+spring:
+  application:
+    name: goods-provider
+
+# 指定当前服务注册的 "服务注册与发现中心" 的地址
+eureka:
+  client:
+    service-url:
+      defaultzone: http://localhost:8761/eureka
